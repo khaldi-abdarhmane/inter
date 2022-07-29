@@ -40,6 +40,13 @@ services:
     networks:
       - db_app_net   
 
+    client:
+        image: nginx
+        ports:
+            - 8000:80
+        volumes:
+            - ./src:/usr/share/nginx/html    
+
 
 networks:
   db_app_net:
