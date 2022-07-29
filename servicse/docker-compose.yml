@@ -52,7 +52,8 @@ services:
       - "8000:80"
       - "8080:8080"
       - "443:443"
-    
+    volumes:
+       - v_traefik:/var/run/docker.sock
     
     networks:
       - webgateway
@@ -63,4 +64,6 @@ networks:
   webgateway:
     driver: bridge
 volumes:
-  db_app:    
+  db_app:
+  v_traefik:
+      
