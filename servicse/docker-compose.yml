@@ -40,7 +40,7 @@ services:
     networks:
       - db_app_net   
 
-    client:
+  client:
         image: nginx
         ports:
             - 8000:80
