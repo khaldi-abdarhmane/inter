@@ -57,11 +57,12 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - /dev/null:/traefik.toml
     networks:
-      - db_app_net
+      - webgateway
 
 networks:
   db_app_net:
     driver: bridge
-
+  webgateway:
+    driver: bridge
 volumes:
   db_app:    
