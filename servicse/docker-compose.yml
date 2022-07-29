@@ -24,6 +24,8 @@ services:
       PGADMIN_DEFAULT_PASSWORD: root
     ports:
       - "5050:80"  
+    networks:
+      - db_app_net  
 
 networks:
   db_app_net:
