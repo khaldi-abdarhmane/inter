@@ -53,3 +53,6 @@ apt-get update
 apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 echo "end instalation docker"
 }
+## Execute #####################################################################################
+
+parser_options $@
