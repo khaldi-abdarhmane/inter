@@ -43,7 +43,7 @@ services:
   client:
         image: nginx
         ports:
-            - 80:80
+            - 8000:80
         volumes:
              - ./src:/usr/share/nginx/html
              - ./nginx/conf/:/etc/nginx/conf.d/:ro
